@@ -1,0 +1,71 @@
+{
+  "results": [
+    {
+      "Model": "Logistic Regression (tuned)",
+      "Accuracy": 0.733,
+      "Precision": 0.498,
+      "Recall": 0.791,
+      "F1": 0.612,
+      "ROC_AUC": 0.842
+    },
+    {
+      "Model": "Gradient Boosting (tuned)",
+      "Accuracy": 0.801,
+      "Precision": 0.668,
+      "Recall": 0.5,
+      "F1": 0.572,
+      "ROC_AUC": 0.845
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.764,
+      "Precision": 0.539,
+      "Recall": 0.783,
+      "F1": 0.638,
+      "ROC_AUC": 0.84
+    }
+  ],
+  "selected": "Gradient Boosting (tuned)",
+  "threshold": {
+    "threshold": 0.29,
+    "precision": 0.542,
+    "recall": 0.781,
+    "f1": 0.64
+  },
+  "eda": {
+    "Contract": {
+      "Month-to-month": 42.7,
+      "One year": 11.3,
+      "Two year": 2.8
+    },
+    "InternetService": {
+      "DSL": 19.0,
+      "Fiber optic": 41.9,
+      "No": 7.4
+    },
+    "PaymentMethod": {
+      "Bank transfer (automatic)": 16.7,
+      "Credit card (automatic)": 15.2,
+      "Electronic check": 45.3,
+      "Mailed check": 19.1
+    },
+    "TechSupport": {
+      "No": 41.6,
+      "No internet service": 7.4,
+      "Yes": 15.2
+    }
+  },
+  "top_features": [
+    "Contract",
+    "tenure",
+    "InternetService",
+    "TotalCharges",
+    "OnlineSecurity",
+    "TechSupport",
+    "MonthlyCharges",
+    "PaymentMethod",
+    "SeniorCitizen",
+    "PaperlessBilling"
+  ],
+  "top20_capture": 0.503
+}
